@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+::placeholder {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #eff0eb;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark h1 {
+  color: #bb86fc;
+}
+
+.dark input {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::placeholder,
+p {
+  color: #cfd1c4;
+}
+
+.dark input:hover {
+  border-color: red;
+}
+
+.dark .btn button:nth-child(1) {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+.dark .btn button:nth-child(2) {
+  background-color: #03dac6;
+  color: #121212;
+}
+
+.container {
+  font-family: "Nunito", sans-serif;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.switch {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.switch label {
+  display: block;
+  width: 46px;
+  height: 23px;
+  background-color: rgb(255, 182, 23);
+  border-radius: 70px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #cfd1c4;
+}
+
+.switch label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 5px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+header {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-transform: capitalize;
+}
+
+.paragraph {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph p {
+  flex-wrap: nowrap;
+  color: #8e8f8d;
+}
+
+p:nth-child(1) {
+  padding: 0 2rem 0 0;
+  max-width: 50%;
+}
+
+.form-div input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #8e8f8d;
+}
+
+.btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+}
+
+.btn button {
+  padding: 0.6rem 1.1rem;
+  min-width: 7rem;
+  margin: 0 5px;
+  border-radius: 4px;
+  border: none;
+  color: #eff0eb;
+}
+
+.btn button:nth-child(1) {
+  background-color: #8a4d76;
+}
+
+.btn button:nth-child(2) {
+  background-color: #fa7c91;
+}
